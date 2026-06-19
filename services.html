@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>СКУИС Digital — услуги</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="nav">
+      <div class="container">
+        <div class="nav-inner">
+          <a class="brand" href="index.html">
+            <div class="brand-mark"><span>Σ</span></div>
+            <div>
+              <div>СКУИС Digital</div>
+              <div style="font-size:12px;color:var(--muted)">web • software • support</div>
+            </div>
+          </a>
+          <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="projects.html">Проекты</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+          <button class="btn nav-toggle" data-menu-toggle>Меню</button>
+        </div>
+        <div class="mobile-menu">
+          <a href="index.html">Главная</a>
+          <a href="services.html">Услуги</a>
+          <a href="projects.html">Проекты</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+      </div>
+    </div>
+
+<main class="container">
+  <div class="page-title">
+    <div class="breadcrumbs">Главная / Услуги</div>
+    <h1>Услуги компании</h1>
+    <p class="section-lead">Показаны направления, которыми может заниматься предприятие: разработка, поддержка, интеграция и дизайн интерфейсов.</p>
+  </div>
+  <section class="section panel" style="padding:22px">
+    <div class="service-tabs">
+      <button class="tab active" data-tab="dev">Разработка</button>
+      <button class="tab" data-tab="support">Поддержка</button>
+      <button class="tab" data-tab="design">Дизайн</button>
+      <button class="tab" data-tab="security">Безопасность</button>
+    </div>
+    <div data-panel="dev">
+      <div class="grid-3">
+        <div class="card"><span class="tag">Web</span><h3>Корпоративные сайты</h3><p>Интернет-визитки, порталы, лендинги и внутренние панели управления.</p></div>
+        <div class="card"><span class="tag">API</span><h3>Серверная часть</h3><p>Интеграции, авторизация, обмен данными и хранение информации.</p></div>
+        <div class="card"><span class="tag">Front-end</span><h3>Интерфейсы</h3><p>Удобные страницы, модальные окна, формы и адаптивная вёрстка.</p></div>
+      </div>
+    </div>
+    <div data-panel="support" style="display:none">
+      <div class="split">
+        <div class="card"><span class="tag">Helpdesk</span><h3>Техническая поддержка</h3><p>Установка, настройка, устранение ошибок и сопровождение рабочих мест.</p></div>
+        <div class="card"><span class="tag">Мониторинг</span><h3>Контроль системы</h3><p>Проверка состояния серверов, рабочих станций и сетевой инфраструктуры.</p></div>
+      </div>
+    </div>
+    <div data-panel="design" style="display:none">
+      <div class="split">
+        <div class="card"><span class="tag">UX</span><h3>Логика интерфейса</h3><p>Структура, сценарии, удобство и понятные кнопки.</p></div>
+        <div class="card"><span class="tag">UI</span><h3>Визуальный стиль</h3><p>Цвет, типографика, карточки, иконки и аккуратная подача.</p></div>
+      </div>
+    </div>
+    <div data-panel="security" style="display:none">
+      <div class="split">
+        <div class="card"><span class="tag">Защита</span><h3>Безопасность</h3><p>Пароли, резервное копирование, права доступа и контроль обновлений.</p></div>
+        <div class="card"><span class="tag">Резерв</span><h3>Сохранность данных</h3><p>Бэкапы, восстановление и минимизация рисков.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
